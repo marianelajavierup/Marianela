@@ -75,6 +75,55 @@
     background-color: var(--camel);
   }
   
+/*TIPOGRAFIAS: Cromorán*/  
+  .cormorant-upright-light {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-regular {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-medium {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-semibold {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-bold {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+/*TIPOGRAFIAS: Karla*/   
+  
+  .karla-uniquifier {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+/*TIPOGRAFIAS: Playfair*/ 
+
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
   
      
   
