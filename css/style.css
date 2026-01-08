@@ -64,35 +64,64 @@ body {
 }
 
 /*SIDEBAR (COLUMNA IZQUIERDA)*/
-.sidebar {
+  .sidebar {
   width: 25%;
   background-color: var(--dark-scarlet);
-  padding: 10px;
-}
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  }
 
-/*PERFIL*/
-.avatar {
-  width: 80px;
-  height: 80px;
-  background-color: var(--camel);
-  border-radius: 50%;
-  margin: 0 auto 10px;
-}
+  /* PERFIL */
+  .perfil {
+  text-align: center;
+  margin-bottom: 30px;
+  }
 
-/*MENÚ*/
-.menu ul {
-  list-style: none;
-}
+  /* LOGO */
+  .logo-sidebar {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+  }
 
-.menu a {
-  text-decoration: none;
-  color: var(--american-silver);
-  font-weight: 500;
-}
+  /* NOMBRE – IDENTIDAD */
+  .nombre {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 1000;
+    font-size: 1.6rem;
+    letter-spacing: 0.12em;
+    color: var(--american-silver);
+    margin-top: 5px;
+  }
 
-.menu a:hover {
-  color: var(--camel);
-}
+
+  /* MENÚ */
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin-bottom: 8px;
+  }
+
+  .menu a {
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--american-silver);
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+
+  /* HOVER MENÚ */
+  .menu a:hover {
+    color: var(--camel);
+    padding-left: 6px;
+  }
+
 
 /*CONTENIDO PRINCIPAL (DERECHA)*/
 .contenido {
@@ -125,15 +154,21 @@ body {
 
 /*FOOTER*/
 .footer {
-  height: 50px;
+  height: 30px;
   background-color: var(--grullo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
   color: var(--dark-scarlet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+
+  font-size: 0.75rem;
 }
 
+/* TEXTO INTERNO */
+.footer p {
+  margin: 0;
+}
   
 /*TIPOGRAFIAS: Cromorán*/  
   .cormorant-upright-light {
