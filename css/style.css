@@ -1,6 +1,4 @@
-/* ==============================
-   PALETA CROMÁTICA
-============================== */
+/*PALETA CROMÁTICA*/
 :root {
   --american-silver: #CACFD2;
   --grullo: #AA9E8E;
@@ -12,54 +10,42 @@
   --negro: #1a1a1a;
 }
 
-/* ==============================
-   RESET BÁSICO
-============================== */
+/*RESET BÁSICO*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ==============================
-   BODY
-============================== */
+/*BODY*/
 body {
   font-family: Arial, sans-serif;
   background-color: var(--american-silver);
   color: var(--negro);
 }
 
-/* ==============================
-   HEADER
-============================== */
+/*HEADER*/
 .header {
-  height: 50px;
-  background-color: var(--grullo);
+  height: 25px;
+  background-color: var(--tuscan-red);
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
-/* ==============================
-   LAYOUT CENTRAL (CLAVE)
-============================== */
+/*LAYOUT CENTRAL*/
 .layout {
-  display: flex;          /* ← ESTO ES LO QUE FALTABA */
+  display: flex;          
 }
 
-/* ==============================
-   SIDEBAR (COLUMNA IZQUIERDA)
-============================== */
+/*SIDEBAR (COLUMNA IZQUIERDA)*/
 .sidebar {
   width: 25%;
   background-color: var(--dark-scarlet);
   padding: 10px;
 }
 
-/* ==============================
-   PERFIL
-============================== */
+/*PERFIL*/
 .avatar {
   width: 80px;
   height: 80px;
@@ -68,9 +54,7 @@ body {
   margin: 0 auto 10px;
 }
 
-/* ==============================
-   MENÚ
-============================== */
+/*MENÚ*/
 .menu ul {
   list-style: none;
 }
@@ -85,18 +69,14 @@ body {
   color: var(--camel);
 }
 
-/* ==============================
-   CONTENIDO PRINCIPAL (DERECHA)
-============================== */
+/*CONTENIDO PRINCIPAL (DERECHA)*/
 .contenido {
   width: 75%;
   padding: 30px;
   background-color: var(--american-silver);
 }
 
-/* ==============================
-   CARDS PROYECTOS
-============================== */
+/*CARDS PROYECTOS*/
 .card-proyecto {
   display: flex;
   gap: 20px;
@@ -111,21 +91,17 @@ body {
   background-color: var(--american-silver);
 }
 
-/* ==============================
-   TRABAJOS ACADÉMICOS
-============================== */
+/*TRABAJOS ACADÉMICOS*/
 .thumb {
   width: 120px;
   height: 80px;
   background-color: var(--camel);
 }
 
-/* ==============================
-   FOOTER
-============================== */
+/*FOOTER*/
 .footer {
-  height: 25px;
-  background-color: var(--blanco);
+  height: 50px;
+  background-color: var(--grullo);
   display: flex;
   align-items: center;
   justify-content: center;
