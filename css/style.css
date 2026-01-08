@@ -25,13 +25,38 @@ body {
 }
 
 /*HEADER*/
-.header {
-  height: 25px;
-  background-color: var(--tuscan-red);
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
+  .header {
+    height: 40px;
+    background-color: var(--tuscan-red);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+  }
+
+  /* CONTENEDOR REDES */
+  .header-redes {
+    display: flex;
+  }
+
+  /* LINKS */
+  .header-redes a {
+    padding-left: 25px;
+  }
+
+  /* ICONOS */
+  .social-icon {
+    font-size: 22px;
+    color: var(--american-silver);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  /* HOVER */
+  .header-redes a:hover .social-icon {
+    color: var(--camel);
+    transform: scale(1.2);
+  }
+
 
 /*LAYOUT CENTRAL*/
 .layout {
