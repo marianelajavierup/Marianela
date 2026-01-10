@@ -55,8 +55,13 @@
 
   /*LAYOUT CENTRAL*/
   .layout {
-  display: flex;          
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
+  
+
 
 /*SIDEBAR (COLUMNA IZQUIERDA)*/
   .sidebar {
@@ -118,27 +123,41 @@
   }
 
 
-  /* CONTENEDOR GENERAL DEL TRABAJO */
-    .trabajo-item {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+/* CONTENEDOR GENERAL DEL TRABAJO */
+  .trabajo-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 
-    padding: 20px 0;
-    border-bottom: 1px solid var(--american-silver);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--american-silver);
 
-    font-family: "Playfair Display", serif;
-    text-decoration: none;
-    color: var(--dark-scarlet);
+  text-decoration: none;
+  color: var(--negro);
 
-    transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  }
+  .contenido {
+    width: 75%;
+    flex-shrink: 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+
+  /* TEXTO CENTRAL */
+  .trabajo-texto {
+  flex: 1;
   }
 
-  /* IMAGEN (IZQUIERDA – 20%) */
+
+  /* IMAGEN (IZQUIERDA – 10%) */
   .trabajo-imagen {
-  width: 10%;
-  order: 1;
+    width: 10%;
+    order: 1;
+    flex-shrink: 0;
   }
+  
 
   .trabajo-imagen img {
   width: 100%;
@@ -148,9 +167,18 @@
 
   /* TEXTO (CENTRO) */
   .trabajo-texto {
-  flex: 1;
-  order: 2;
+    flex: 1;
+    order: 2;
   }
+  .titulo-seccion {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--dark-scarlet);
+    text-align: right;
+    margin-bottom: 40px;
+  }
+  
 
   /* TÍTULO PROYECTO */
   .trabajo-texto h4 {
@@ -169,15 +197,26 @@
 
   /* FLECHA (DERECHA) */
   .trabajo-flecha {
-  font-size: 1.5rem;
-  font-weight: 300;
-  order: 3;
+    order: 3;
+    font-family: "Karla", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
   }
+  
 
   /* HOVER Trabajos Académicos*/
-  .trabajo-item:hover {
-  color: var(--tuscan-red);
+  .trabajo-item {
+    transition: color 0.3s ease;
   }
+  
+  .trabajo-item:hover {
+    color: var(--tuscan-red);
+  }
+  
 
 
 
