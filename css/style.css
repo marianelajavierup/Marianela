@@ -480,7 +480,7 @@
 /* FLECHAS CARRUSEL */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%;
+  width: 10%;
 }
 
 .carousel-control-prev-icon,
@@ -489,7 +489,7 @@
 }
 /* INDICADORES (PUNTOS) CARRUSEL */
 .carousel-indicators [data-bs-target] {
-  background-color: var(--dark-scarlet);
+  background-color: var(--camel);
 }
 
 .carousel-indicators {
