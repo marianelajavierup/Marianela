@@ -367,3 +367,204 @@
 .volver-catalogo:hover {
   color: var(--tuscan-red);
 }
+
+/* ======================================================
+   BLOQUE 1 | ENCABEZADO DEL PROYECTO (FUNGUS)
+====================================================== */
+
+/* CONTENEDOR GENERAL */
+.proyecto-encabezado {
+  margin-bottom: 80px;
+}
+
+/* REFERENCIA DE SECCIÓN (H4) */
+.referencia-seccion {
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-scarlet);
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* CONTENEDOR FLEX (TEXTO + IMAGEN) */
+.proyecto-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* COLUMNA TEXTO */
+.proyecto-info {
+  flex: 1;
+}
+
+/* TÍTULO PRINCIPAL */
+.proyecto-titulo {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: var(--dark-scarlet);
+  margin-bottom: 20px;
+}
+
+/* RESUMEN */
+.proyecto-resumen {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--negro);
+  margin-bottom: 25px;
+  max-width: 600px;
+}
+
+/* FICHA TÉCNICA */
+.proyecto-ficha {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proyecto-ficha li {
+  font-family: "Karla", sans-serif;
+  font-size: 0.85rem;
+  color: var(--negro);
+  margin-bottom: 6px;
+}
+
+.proyecto-ficha strong {
+  font-weight: 600;
+}
+
+/* IMAGEN PRINCIPAL */
+.proyecto-imagen {
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.proyecto-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* BLOQUE 2 · PROCESO */
+.proyecto-proceso {
+  margin-top: 80px;
+}
+.proceso-titulo {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--negro);
+  margin-bottom: 15px;
+}
+.proceso-descripcion {
+  font-family: "Karla", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--negro);
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+/* CONTENEDOR CARRUSEL */
+.proceso-carrusel {
+  max-width: 100%;
+}
+/* IMAGEN CARRUSEL */
+.proceso-carrusel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* FLECHAS CARRUSEL */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+/* INDICADORES (PUNTOS) CARRUSEL */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--dark-scarlet);
+}
+
+.carousel-indicators {
+  margin-bottom: -30px;
+}
+
+/* BLOQUE 3 · MATERIAL ACADÉMICO */
+.bloque-material {
+  margin-top: 80px;
+}
+
+/* TÍTULO DEL BLOQUE */
+.titulo-bloque {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--negro);
+  margin-bottom: 30px;
+}
+
+/* GRID DE MATERIALES */
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ITEM INDIVIDUAL */
+.material-item {
+  text-decoration: none;
+  color: var(--negro);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* MINIATURA */
+.material-thumb {
+  width: 100%;
+  background-color: var(--american-silver);
+  overflow: hidden;
+}
+
+.material-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* INFO */
+.material-info {
+  margin-top: 12px;
+}
+
+.material-info h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.material-info p {
+  font-family: "Karla", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  color: var(--negro);
+  opacity: 0.85;
+}
+
+/* HOVER */
+.material-item:hover {
+  color: var(--tuscan-red);
+  transform: translateY(-4px);
+}
+
+.material-item:hover img {
+  transform: scale(1.05);
+}
+
