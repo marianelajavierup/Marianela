@@ -483,7 +483,7 @@
 /* FLECHAS CARRUSEL */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 10%;
+  width: 15%;
 }
 
 .carousel-control-prev-icon,
@@ -502,6 +502,13 @@
 .carousel-inner {
   height: 600px; /* podés ajustar este valor */
 }
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #fff;
+}
+
 
 
 /* BLOQUE 3 · MATERIAL ACADÉMICO */
