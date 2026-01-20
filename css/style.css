@@ -506,7 +506,7 @@
   background-color: rgba(0, 0, 0, 0.45);
   padding: 12px 16px;
   border-radius: 4px;
-  color: #fff;
+  color: var(--american-silver);
 }
 
 
