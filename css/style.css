@@ -206,7 +206,7 @@
 ========================= */
 .trabajo-item {
   display: flex;
-  align-items: center;
+  align-items: top;
   gap: 30px;
   padding: 20px 0;
   border-bottom: 1px solid var(--american-silver);
@@ -219,6 +219,7 @@
   color: var(--tuscan-red);
 }
 
+/* IMAGEN */
 .trabajo-imagen {
   width: 10%;
   flex-shrink: 0;
@@ -230,23 +231,39 @@
   display: block;
 }
 
+/* TEXTO */
 .trabajo-texto {
   flex: 1;
 }
 
+/* 1️⃣ INDICIO / CATEGORÍA */
+.trabajo-texto p:first-of-type {
+  font-family: "Karla", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--american-silver);
+  margin-bottom: 15px;
+}
+
+/* 2️⃣ TÍTULO DEL TRABAJO */
 .trabajo-texto h4 {
   font-family: "Playfair Display", serif;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.trabajo-texto p {
+/* 3️⃣ DESCRIPCIÓN BREVE */
+.trabajo-texto p:last-of-type {
   font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  line-height: ;
+  color: var(--negro);
   margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
+/* FLECHA / CTA */
 .trabajo-flecha {
   font-family: "Karla", sans-serif;
   font-size: 0.85rem;
@@ -254,6 +271,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.trabajo-item:hover .trabajo-flecha {
+  opacity: 1;
 }
 
 /* =========================
