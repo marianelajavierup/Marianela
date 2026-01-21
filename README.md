@@ -1,2 +1,2 @@
-# Marianela
-web personal
+# Portfolio Marianela Javier 
+Web personal
