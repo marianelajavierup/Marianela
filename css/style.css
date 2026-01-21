@@ -53,179 +53,212 @@
   }
 
 
-  /*LAYOUT CENTRAL*/
-  .layout {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-  
+/* =========================
+   LAYOUT GENERAL
+========================= */
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
-
-/*SIDEBAR (COLUMNA IZQUIERDA)*/
-  .sidebar {
+/* =========================
+   SIDEBAR (COLUMNA IZQUIERDA)
+========================= */
+.sidebar {
   width: 25%;
   background-color: var(--dark-scarlet);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  }
+}
 
-  /* PERFIL */
-  .perfil {
+/* PERFIL */
+.perfil {
   text-align: center;
   margin-bottom: 30px;
-  }
+}
 
-  /* LOGO */
-  .logo-sidebar {
-    width: 80%;
-    height: auto;
-    margin-bottom: 15px;
-  }
+/* LOGO */
+.logo-sidebar {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
-  /* NOMBRE – IDENTIDAD */
-  .nombre {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 1000;
-    font-size: 1.6rem;
-    letter-spacing: 0.12em;
-    color: var(--american-silver);
-    margin-top: 5px;
-  }
+/* NOMBRE */
+.nombre {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 1000;
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+  color: var(--american-silver);
+  margin-top: 5px;
+}
+
+/* MENÚ */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 8px;
+}
+
+.menu a {
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: var(--american-silver);
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--camel);
+  padding-left: 6px;
+}
+
+/* =========================
+   COLUMNA DERECHA
+========================= */
+/* CONTENIDO GENERAL (todas las páginas) */
+.contenido {
+  width: 75%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+/* SOLO HOME */
+.home .contenido {
+  padding: 0;
+}
 
 
-  /* MENÚ */
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+/* ========================= 
+   HERO / CARRUSEL (BASE)
+========================= */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .menu li {
-    margin-bottom: 8px;
-  }
+/* Carrusel Bootstrap */
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item,
+.hero-carousel img {
+  height: 100%;
+}
 
-  .menu a {
-    font-family: "Playfair Display", serif;
-    font-size: 0.95rem;
-    font-weight: 100;
-    text-decoration: none;
-    color: var(--american-silver);
-    transition: color 0.3s ease, padding-left 0.3s ease;
-  }
+.hero-carousel img {
+  object-fit: cover;
+}
 
-  /* HOVER MENÚ */
-  .menu a:hover {
-    color: var(--camel);
-    padding-left: 6px;
-  }
+/* ========================= 
+   SOLO HOME
+========================= */
+.home .hero-carousel {
+  height: 100vh;
+}
+
+.intro-box {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
 
 
-/* CONTENEDOR GENERAL DEL TRABAJO */
-  .trabajo-item {
+/* TEXTO SUPERPUESTO */
+.intro-box {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+.proyecto-titulo {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.proyecto-descripcion {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+/* =========================
+   TRABAJOS / SECCIONES
+========================= */
+.trabajo-item {
   display: flex;
   align-items: center;
   gap: 30px;
-
   padding: 20px 0;
   border-bottom: 1px solid var(--american-silver);
-
   text-decoration: none;
   color: var(--negro);
-
   transition: color 0.3s ease;
-  }
-  .contenido {
-    width: 75%;
-    flex-shrink: 0;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-  
+}
 
-  /* TEXTO CENTRAL */
-  .trabajo-texto {
-  flex: 1;
-  }
+.trabajo-item:hover {
+  color: var(--tuscan-red);
+}
 
+.trabajo-imagen {
+  width: 10%;
+  flex-shrink: 0;
+}
 
-  /* IMAGEN (IZQUIERDA – 10%) */
-  .trabajo-imagen {
-    width: 10%;
-    order: 1;
-    flex-shrink: 0;
-  }
-  
-
-  .trabajo-imagen img {
+.trabajo-imagen img {
   width: 100%;
   height: auto;
   display: block;
-  }
+}
 
-  /* TEXTO (CENTRO) */
-  .trabajo-texto {
-    flex: 1;
-    order: 2;
-  }
-  .titulo-seccion {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: var(--dark-scarlet);
-    text-align: right;
-    margin-bottom: 40px;
-  }
-  
+.trabajo-texto {
+  flex: 1;
+}
 
-  /* TÍTULO PROYECTO */
-  .trabajo-texto h4 {
+.trabajo-texto h4 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   margin-bottom: 8px;
-  }
+}
 
-  /* DESCRIPCIÓN */
-  .trabajo-texto p {
+.trabajo-texto p {
   font-family: "Karla", sans-serif;
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
-  }
+}
 
-  /* FLECHA (DERECHA) */
-  .trabajo-flecha {
-    order: 3;
-    font-family: "Karla", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-  }
-  
+.trabajo-flecha {
+  font-family: "Karla", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-  /* HOVER Trabajos Académicos*/
-  .trabajo-item {
-    transition: color 0.3s ease;
-  }
-  
-  .trabajo-item:hover {
-    color: var(--tuscan-red);
-  }
-  
-
-
-
-
-
-
-
-
-/*FOOTER*/
+/* =========================
+   FOOTER
+========================= */
 .footer {
   height: 30px;
   background-color: var(--grullo);
@@ -234,15 +267,13 @@
   justify-content: center;
   align-items: center;
   gap: 15%;
-
   font-size: 0.75rem;
 }
 
-/* TEXTO INTERNO */
 .footer p {
   margin: 0;
 }
-  
+
 /*TIPOGRAFIAS: Cromorán*/  
   .cormorant-upright-light {
     font-family: "Cormorant Upright", serif;
