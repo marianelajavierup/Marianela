@@ -457,7 +457,7 @@
 /* INDICIO / CATEGORÍA */
 .proyecto-info .categoria {
   font-family: "Karla", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--american-silver);
