@@ -352,6 +352,7 @@
 /* DETALLE DE PROYECTO */
 /* ============================= */
 
+
 .titulo-proyecto {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -453,6 +454,18 @@
   flex: 1;
 }
 
+/* INDICIO / CATEGORÍA */
+.proyecto-info .categoria {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--american-silver);
+  margin-bottom: 15px;
+}
+
+
+
 /* TÍTULO PRINCIPAL */
 .proyecto-titulo {
   font-family: "Playfair Display", serif;
@@ -465,7 +478,7 @@
 /* RESUMEN */
 .proyecto-resumen {
   font-family: "Karla", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: var(--negro);
   margin-bottom: 25px;
