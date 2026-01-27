@@ -714,3 +714,57 @@
   transform: scale(1.05);
 }
 
+/* ===== BOTÓN LINK PROYECTO ===== */
+
+
+.boton-link-proyecto {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  background-color: var(--dark-scarlet);
+  color: var(--blanco);
+
+  padding: 12px 18px;
+  border-radius: 4px;
+  margin: 50px;
+
+  text-decoration: none;
+
+  font-family: "Karla", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+
+  transition: all 0.3s ease;
+}
+
+/* TEXTO LINK */
+.boton-link-proyecto .link-label {
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+/* URL */
+.boton-link-proyecto .link-url {
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: 0.75rem;
+}
+
+/* ICONO */
+.boton-link-proyecto i {
+  font-size: 1rem;
+}
+
+/* HOVER */
+.boton-link-proyecto:hover {
+  background-color: var(--camel);
+  color: var(--negro);
+  transform: translateY(-2px);
+}
+
+/* CONTENEDOR DEL BOTÓN LINK */
+.boton-link-proyecto {
+  margin: center auto 0 auto;  /* centra horizontalmente */
+}
+
