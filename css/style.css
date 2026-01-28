@@ -784,3 +784,46 @@
 }
 
 
+/* SERVICIOS */
+#servicios h1{
+  font-weight: 600;
+}
+
+#servicios .card{
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+#servicios .card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px var(--camel) ; 
+}
+
+.cta-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.cta-label{
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+
+.cta-actions{
+  display: flex;
+  gap: 8px;
+}
+
+
+
+
+
